@@ -15,6 +15,8 @@ export default function App() {
   const [goals, setGoals] = useState<CourseGoalProps[]>([]);
 
   function handleAddGoal(goal: string, summary: string) {
+    if (!goal || !summary) return;
+
     const newGoal: CourseGoalProps = {
       id: Math.random(),
       title: goal,
