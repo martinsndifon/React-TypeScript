@@ -1,7 +1,7 @@
 import { useRef } from 'react';
-import Button from './components/Button';
-import Container from './components/Container';
-import Input from './components/Input';
+import Button from './components/UI/Button';
+import Container from './components/UI/Container';
+import Input from './components/UI/Input';
 
 function App() {
   const input = useRef<HTMLInputElement>(null);
